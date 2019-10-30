@@ -1,0 +1,5 @@
+
+
+word = input("Wprowadź swój komunikat: ")
+new_word = word[::-1]
+print(word, new_word)
