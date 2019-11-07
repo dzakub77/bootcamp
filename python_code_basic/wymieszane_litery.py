@@ -70,3 +70,5 @@ if guess == correct and p == 'y':
 elif guess == correct:
     print(f"Brawo, udało ci się za {tries} próbą")
     score = 100 - (tries * 10)
+
+input("Jeśli chcesz zakończyć gre, naciśnij enter.")

@@ -9,3 +9,6 @@ while x < 7:
         words.remove(word)
     print(word)
     x += 1
+
+
+input("Jeśli chcesz zakończyć gre, naciśnij enter.")

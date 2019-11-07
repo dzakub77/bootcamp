@@ -19,3 +19,5 @@ while tries != 6:
     if tries == 5:
         print("Niestety nie udało Ci się. To słowo to: ", word)
 
+input("Jeśli chcesz zakończyć gre, naciśnij enter.")
+

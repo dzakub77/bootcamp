@@ -1,7 +1,7 @@
 import random
 
 words = ['morze', 'kaloryfer', 'komoda', 'laptop', 'lusterko', 'obraz', 'pudełka', 'skarbonka', 'łóżko', 'podłoga',
-         'ala ma kota a kot ma ale', 'jak kuba bogu, tak bog kubie', 'ale jaja']
+         'ala ma kota a kot ma ale', 'jak kuba bogu tak bog kubie', 'ale jaja']
 word = random.choice(words)
 word = word.upper()
 wisielec = (
@@ -157,3 +157,5 @@ while wrong_answers < max_tries and answer != word:
         print("Zostałeś powieszony! Koniec gry!")
     elif answer == word:
         print("Brawo, udało Ci się odgadnąć. Zagadka to ",word)
+
+input("Jeśli chcesz zakończyć gre, naciśnij enter.")
