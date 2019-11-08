@@ -1,7 +1,7 @@
 import turtle
 
 def szachownica(n):
-
+    turtle.speed(0)
     for i in range(n):
         licznik = 0
         while licznik != n:
