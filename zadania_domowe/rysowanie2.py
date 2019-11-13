@@ -1,7 +1,13 @@
 import turtle
+def filled():
+    turtle.fillcolor("yellow")
+    turtle.begin_fill()
+
+def empty():
+    turtle.end_fill()
 
 def szachownica(n):
-    turtle.speed(0)
+   # turtle.speed(0)
     for i in range(n):
         licznik = 0
         while licznik != n:
@@ -24,8 +30,9 @@ def szachownica(n):
                 turtle.forward(50)
                 break
 
+
             licznik += 1
 
 
-print(szachownica(6))
+print(szachownica(3))
 turtle.done()
