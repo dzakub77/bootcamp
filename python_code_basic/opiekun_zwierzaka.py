@@ -27,19 +27,24 @@ class Critter:
         print(f"Nazywam się {self.name}, i jestem teraz {self.mood}")
         self.__pass_time()
 
-    def eat(self, food = 4):
+    def eat(self):
+        food = int(input("Jaka ilość jedzenia? "))
         print("To było pyszne!")
         self.hunger -= food
         if self.hunger < 0:
             self.hunger = 0
         self.__pass_time()
 
-    def play(self, fun = 4):
+    def play(self):
+        fun = int(input("Ile bedziemy sie bawic? "))
         print("Świetna zabawa!")
         self.boredom -= fun
         if self.boredom < 0:
             self.boredom = 0
         self.__pass_time()
+
+    def __str__(self):
+        return f"name: {self.name}\ngłód: {self.hunger}\nhumor: {self.boredom}"
 
 def main():
     crit_name = input("Jak mam nazwac zwierzaka? ")
@@ -65,6 +70,8 @@ def main():
             crit.eat()
         elif choice == '3':
             crit.play()
+        elif choice == '9':
+            print(crit)
         else:
             print(f'Wybor {choice} jest nieprawidłowym wyborem')
 
