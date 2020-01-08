@@ -10,9 +10,9 @@ class BJ_Card(gra_w_karty.Card):
             v = BJ_Card.RANKS.index(self.rank) + 1
             if v > 10:
                 v = 10
-            else:
-                v = None
-            return v
+        else:
+            v = None
+        return v
 
 
 class BJ_Deck(gra_w_karty.Deck):

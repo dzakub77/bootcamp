@@ -1,5 +1,5 @@
 
-class Card:
+class Card(object):
     """Karta do gry"""
     RANKS = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
     SUITS = ['c', 'd', 'h', 's'] # c -trefle(ang.clubs), d -kara(ang.diamonds), h - kiery(ang.hearts), s- piki(ang.spades)
@@ -19,7 +19,7 @@ class Card:
     def flip(self):
         self.is_face_up = not self.is_face_up
 
-class Hand:
+class Hand(object):
     """Ręka - karty do gry w ręku gracza"""
     def __init__(self):
         self.cards = []
